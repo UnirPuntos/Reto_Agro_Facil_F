@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scrip.js">
+    <link rel="stylesheet" href="contactos.html">
+
+    <script src="https://kit.fontawesome.com/aac15f2451.js" crossorigin="anonymous"></script>
+    <title>Facil_Agro</title>
+</head>
+
+<body>
+    <header class="header-index">
+        <nav class="menu-nav">
+            <ul class="menu">
+                <li><a href="index.html" class="btn-menu activo">Inicio</a></li>
+                <li><a href="gestion.html" class="btn-menu">Gestión</a></li>
+                <li><a href="contactos.html" class="btn-menu">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="index.html"><div class="logo"></div></a>
+        <div class="current-date"></div>
+
+    </header>
+        <div class="branding-container">
+            <div class="branding-logo"></div>
+            <div>
+                <div class="branding-title">Fácil Agro</div>
+                <div class="branding-subtitle">Soluciones para un futuro sostenible</div>
+            </div>
+        </div>
+
+        </nav>
+        <div class="container">
+            <h1>Calendario de Cultivos</h1>
+            <div class="calendar-header">
+                <div>Dom</div>
+                <div>Lun</div>
+                <div>Mar</div>
+                <div>Mié</div>
+                <div>Jue</div>
+                <div>Vie</div>
+                <div>Sáb</div>
+            </div>
+            <div class="calendar" id="calendar"></div>
+            
+            
+           
+            <!-- Calendario -->
+            <div>
+                <button id="prev-month">&#9664; Mes Anterior</button>
+                <span id="month-year"></span>
+                <button id="next-month">Mes Siguiente &#9654;</button>
+            </div>
+            <div class="calendar" id="calendar"></div>
+
+            <!-- Detalle de Eventos -->
+            <div id="event-details" class="hidden">
+                <h3>Eventos del día</h3>
+                <ul id="events-list"></ul>
+                <button id="clear-events">Eliminar Eventos</button>
+
+            </div>
+
+            <!-- Gestión de Cultivos -->
+            <div class="cultivos-section">
+                <h3>Gestión de Cultivos</h3>
+                <ul id="cultivos-list">
+                    <li>Arroz</li>
+                    <li>Maíz</li>
+                    <li>Algodon</li>
+                    <li>Platano</li>
+                </ul>
+                <input type="text" id="nuevo-cultivo" placeholder="Agregar nuevo cultivo">
+                <button id="agregar-cultivo">Agregar Cultivo</button>
+            </div>
+
+            <!-- Planificar Siembras -->
+            <div class="form-section">
+                <h3>Planificar Siembra</h3>
+                <form id="siembra-form">
+                    <label for="cultivo">Cultivo:</label>
+                    <select id="cultivo">
+                        <option>Arroz</option>
+                        <option>Maíz</option>
+                        <option>Algodon</option>
+                        <option>Platano</option>
+                    </select><br>
+                    <label for="area">Área a sembrar:</label>
+                    <input type="number" id="area" min="1" placeholder="Ej: 100 (m²) o 1 (ha)" required><br>
+                    <label for="unidad-area">Unidad:</label>
+                    <select id="unidad-area">
+                        <option value="m2">Metros cuadrados</option>
+                        <option value="ha">Hectáreas</option>
+                    </select><br>
+                    <label for="estado">Estado del Cultivo:</label>
+                    <select id="estado">
+                        <option>En progreso</option>
+                        <option>Completado</option>
+                        <option>Finalizado</option>
+                        <option>Preparación del suelo</option>
+                        <option>Esperando riego</option>
+                    </select><br>
+                    <label for="detalles">Detalles del Cultivo:</label><br>
+                    <input type="checkbox" id="fertilizado"> Fertilizado<br>
+                    <input type="checkbox" id="regado"> Regado<br>
+                    <input type="checkbox" id="danado"> Dañado<br>
+                    <input type="checkbox" id="abono"> Necesita Abono<br>
+                    <input type="checkbox" id="tratamiento"> Tratamiento aplicado<br>
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" required><br>
+                    <button type="submit">Planificar</button>
+                </form>
+            </div>
+        </div>
+
+        <link rel="stylesheet" href="scrip.js">
+        <script src="scrip.js"></script>
+
+</body>
+
+<footer class="main-footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h3>Acerca de</h3>
+            <p>
+                Este sistema está diseñado para facilitar la planificación y gestión de cultivos en el campo, promoviendo la eficiencia y sostenibilidad agrícola.
+            </p>
+        </div>
+        <div class="footer-section links">
+            <h3>Enlaces</h3>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="gestion.html">Gestión de Cultivos</a></li>
+                <li><a href="#planificar-siembra">Planificar Siembra</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h3>Contacto</h3>
+            <p>Email: facil_agro@cultivosagro.com</p>
+            <p>Teléfono: +57 324565</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 Cultivos Agro | Todos los derechos reservados.
+    </div>
+</footer>
+
+
+
+
+</footer>
+
+</html>
